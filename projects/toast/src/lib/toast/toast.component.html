@@ -1,0 +1,12 @@
+<div class="toast {{ toast.position }} {{ toast.type }}"
+     (click)="destroy()"
+     [ngStyle]="style">
+
+  <i class="icon {{ getIconByType() }}"></i>
+  <div class="toast__body">
+    <h5>{{ toast.heading }}</h5>
+    <h6 *ngIf="toast.subheading"> - {{ toast.subheading }}</h6>
+    <p>{{ toast.message }}</p>
+  </div>
+  <span class="toast__count" *ngIf="toastCount">{{toastCount}}</span>
+</div>

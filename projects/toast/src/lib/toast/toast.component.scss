@@ -1,0 +1,101 @@
+@import "../general/styles";
+
+:host{
+  display:block;
+}
+
+.toast{
+  position: relative;
+  pointer-events: all;
+  margin: 20px 40px;
+  width: 350px;
+  height: 70px;
+  align-items: center;
+  border-left: 8px solid transparent;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  display: flex;
+
+  .icon{
+    font-size: 1.8em;
+    margin: 0 10px;
+    color: var(--toast-col-black);
+  }
+
+  &__count{
+    background: var(--toast-col-black);
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+  }
+
+  h5, h6, p{
+    margin: 0;
+    color: var(--toast-col-black);
+  }
+  h5{
+    font-size: 1em;
+    font-weight: bold;
+    display:inline;
+  }
+  h6{
+    font-size: .8em;
+    font-weight:bold;
+    display: inline;
+  }
+  p{
+    font-size: .8em;
+  }
+
+
+  &--top-left{
+    top: 0;
+    left: 0;
+  }
+
+  &--top-right{
+    top: 0;
+    right: 0;
+  }
+
+  &--bottom-left{
+    bottom: 0;
+    left: 0;
+  }
+
+  &--bottom-right{
+    bottom: 0;
+    right: 0;
+  }
+
+
+  &--success{
+    border-color: var(--toast-col-success);
+    background-color: var(--toast-col-success-light);
+  }
+
+  &--warning{
+    border-color: var(--toast-col-warning);
+    background-color: var(--toast-col-warning-light);
+  }
+
+  &--info{
+    border-color: var(--toast-col-info);
+    background-color: var(--toast-col-info-light);
+  }
+
+  &--error{
+    border-color: var(--toast-col-error);
+    background-color: var(--toast-col-error-light);
+  }
+}
+
+

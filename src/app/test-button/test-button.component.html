@@ -1,0 +1,64 @@
+<form>
+
+  <h3>Toast</h3>
+
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select [(ngModel)]="toast.type" name="type" required>
+      <mat-option value="{{ toastType.success }}">Success</mat-option>
+      <mat-option value="{{ toastType.info }}">Info</mat-option>
+      <mat-option value="{{ toastType.warning }}">Warning</mat-option>
+      <mat-option value="{{ toastType.error }}">Error</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Heading</mat-label>
+    <input matInput type="text" [(ngModel)]="toast.heading" name="heading" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Subheading</mat-label>
+    <input matInput [(ngModel)]="toast.subheading" name="subheading">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Message</mat-label>
+    <input matInput [(ngModel)]="toast.message" name="message" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Timeout</mat-label>
+    <input matInput type="number" min="0" [(ngModel)]="toast.timeout" name="timeout" required>
+    <mat-hint>Defines how long the Toast will stay (zero is forever)</mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="sendTestToast()">Toast it</button>
+
+</form>
+
+<form>
+
+  <h3>Config</h3>
+
+  <mat-form-field>
+    <mat-label>Position</mat-label>
+    <mat-select [(ngModel)]="toastConfig.position" name="position">
+      <mat-option value="{{ toastPosition.topLeft }}">Top Left</mat-option>
+      <mat-option value="{{ toastPosition.topRight }}">Top Right</mat-option>
+      <mat-option value="{{ toastPosition.bottomLeft }}">Bottom Left</mat-option>
+      <mat-option value="{{ toastPosition.bottomRight }}">Bottom Right</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Grouping Threshold</mat-label>
+    <input matInput type="number" min="1" [(ngModel)]="toastConfig.groupingThreshold" name="groupingThreshold">
+    <mat-hint>Defines how many toasts can be shown at the same time until they get grouped</mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="sendConfig()">Change Config</button>
+
+
+</form>
+

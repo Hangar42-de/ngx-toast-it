@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+$ionicons-font-path: "~ionicons/dist/fonts";@import "~ionicons/dist/scss/ionicons.scss";
+
+:host  {
+  --toast-col-success: #47a363;
+  --toast-col-success-light: #e7f4e4;
+  --toast-col-info: #00bfe8;
+  --toast-col-info-light: #e1f3f8;
+  --toast-col-warning: #fdb81e;
+  --toast-col-warning-light: #fff1d2;
+  --toast-col-error: #e21d3d;
+  --toast-col-error-light: #f9dedf;
+  --toast-col-black: #333333;
+}
