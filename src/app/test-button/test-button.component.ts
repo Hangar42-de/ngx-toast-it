@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ToastItService} from '../../../projects/ngx-toast-it/src/lib/toast-it.service';
-import {Toast, ToastConfig, ToastPosition, ToastType} from '../../../projects/ngx-toast-it/src/lib/toast.model';
+import {ToastItService, Toast, ToastConfig, ToastPosition, ToastType} from 'ngx-toast-it';
 
 @Component({
   selector: 'app-test-button',
@@ -21,7 +20,7 @@ export class TestButtonComponent implements OnInit {
     type: ToastType.success,
     heading: 'Great',
     subheading: 'You found the Toast Component',
-    message: 'Let us know what you like about it',
+    message: 'Let us know what you think about it',
     timeout: 0
   };
 

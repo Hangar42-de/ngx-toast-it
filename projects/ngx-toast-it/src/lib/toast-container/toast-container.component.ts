@@ -6,7 +6,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 import {filter, take, toArray} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-toast-container',
+  selector: 'lib-toast-container',
   templateUrl: './toast-container.component.html',
   styleUrls: ['./toast-container.component.scss'],
   animations: [

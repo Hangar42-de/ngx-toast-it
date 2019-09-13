@@ -13,20 +13,21 @@ export enum ToastPosition {
 }
 
 export class ToastConfig {
-  position?: ToastPosition = ToastPosition.topRight;
-  groupingThreshold?: number = 5;
+  position ? = ToastPosition.topRight;
+  groupingThreshold ? = 5;
 
-  constructor(config = {}){
-    Object.assign(this, config)
+  constructor(config = {}) {
+    Object.assign(this, config);
   }
 }
 
 export class Toast {
+
   type: ToastType;
   heading: string;
-  subheading?: string = '';
+  subheading ? = '';
   message: string;
-  timeout?: number = 5;
+  timeout ? = 5;
 
   constructor(toast) {
     Object.assign(this, toast);

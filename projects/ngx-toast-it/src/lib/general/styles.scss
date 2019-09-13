@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
-$ionicons-font-path: "~ionicons/dist/fonts";@import "~ionicons/dist/scss/ionicons.scss";
+$roboto-font-path: "~ionicons/dist/fonts";@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+//$ionicons-font-path: "~ionicons/dist/fonts";@import "~ionicons/dist/scss/ionicons.scss";
+@import "~ionicons/dist/scss/ionicons.scss";
 
 :host  {
   --toast-col-success: #47a363;

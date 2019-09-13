@@ -7,9 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:library": "ng build ngx-toast-it",
+    "lint:library": "ng lint ngx-toast-it"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^8.2.6",
     "@angular/cdk": "^8.2.0",

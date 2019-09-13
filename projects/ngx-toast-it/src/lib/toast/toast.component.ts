@@ -4,7 +4,7 @@ import {Toast} from '../toast.model';
 const FACTOR_SECONDS_TO_MS = 1000;
 
 @Component({
-  selector: 'app-toast',
+  selector: 'lib-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.scss']
 })
@@ -13,7 +13,7 @@ export class ToastComponent implements OnInit {
   public style = {};
   @Input() public toast: Toast;
   @Input() public toastCount: number;
-  @Output() public onDestroy = new EventEmitter();
+  @Output() public destroyEmitter = new EventEmitter();
 
   constructor() {
   }
@@ -35,11 +35,12 @@ export class ToastComponent implements OnInit {
     }
   }
 
-  public destroy = () => this.onDestroy.next();
+  public destroy = () => this.destroyEmitter.next();
 
   private startTimer() {
-    if (this.toast.timeout === 0)
+    if (this.toast.timeout === 0) {
       return;
+    }
 
     setTimeout(() => this.destroy(), this.toast.timeout * FACTOR_SECONDS_TO_MS);
   }

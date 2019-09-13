@@ -24,6 +24,18 @@
       ],
       "toast/*": [
         "dist/toast/*"
+      ],
+      "ngx-toast-it": [
+        "dist/ngx-toast-it"
+      ],
+      "ngx-toast-it/*": [
+        "dist/ngx-toast-it/*"
+      ],
+      "@hangar42/ngx-toast-it": [
+        "dist/hangar42/ngx-toast-it"
+      ],
+      "@hangar42/ngx-toast-it/*": [
+        "dist/hangar42/ngx-toast-it/*"
       ]
     }
   },

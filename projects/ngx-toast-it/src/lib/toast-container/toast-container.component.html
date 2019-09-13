@@ -1,8 +1,8 @@
 <div class="toast-container toast-container--{{ config.position }}">
-  <app-toast *ngFor="let toast of toasts$ | async; index as index"
+  <lib-toast *ngFor="let toast of toasts$ | async; index as index"
              [@fadeInOut]
              [toast]="toast"
              [toastCount]="(index + 1) === config.groupingThreshold ? (toastCount$ | async) : null"
-             (onDestroy)="destroy(index)">
-  </app-toast>
+             (destroyEmitter)="destroy(index)">
+  </lib-toast>
 </div>

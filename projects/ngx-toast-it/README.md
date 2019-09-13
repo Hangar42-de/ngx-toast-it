@@ -1,14 +1,14 @@
 # ngxToastIt
 
-ngToastIt is a simple and lightweight Angular module providing Toasts for your application.
+ngxToastIt is a simple and lightweight Angular module providing Toasts for your application.
 
-##Usage
+## Usage
 
 ##### 1. Install via [NPM](http://www.npmjs.org):
   ```bash
-  npm install ngx-toast-it
+  npm install @hangar42/ngx-toast-it
   ```
-  or manually [download](https://github.com/Hangar42-de/toast-it/archive/master.zip).
+  or manually [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip).
 
 ##### 2. Include ngxToastIt as a dependency in your desired module:
   ```javascript
@@ -59,14 +59,16 @@ ngToastIt is a simple and lightweight Angular module providing Toasts for your a
 
 ## Development
 
-* Clone the repo or [download](https://github.com/Hangar42-de/toast-it/archive/master.zip)
+* Clone the repo or [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip)
 * Install dependencies: ``npm install``
+* Run ``npm run build:library``
 * Run ``ng serve``
 
 ## License
 
-GPLv3 [Link](https://github.com/Hangar42-de/toast-it/blob/master/LICENSE/)
+GPLv3 [Link](https://github.com/Hangar42-de/ngx-toast-it/blob/master/LICENSE/)
 
 ## Maintainers
 
+- [Hangar 42](https://hangar42.de)
 - [Dennis Rösner](https://rösner.de)

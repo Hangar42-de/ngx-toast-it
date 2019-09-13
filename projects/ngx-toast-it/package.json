@@ -1,8 +1,24 @@
 {
-  "name": "ngx-toast-it",
-  "version": "0.1.0",
+  "name": "@hangar42/ngx-toast-it",
+  "version": "0.9.0",
+  "private": false,
+  "homepage": "https://xn--rsner-jua.de",
+  "bugs": {
+    "url": "https://github.com/Hangar42-de/ngx-toast-it/issues",
+    "email": "bugs@hangar42.de"
+  },
+  "author": {
+    "name" : "Dennis Rösner"
+  , "email" : "dennis@hangar42.de"
+  , "url" : "https://xn--rsner-jua.de/"
+  },
+  "license":  "GPL-3.0",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
-    "@angular/core": "^8.2.4"
+    "@angular/core": "^8.2.4",
+    "@angular/animations": "^8.2.6",
+    "ionicons": "^4.6.3",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0"
   }
 }
