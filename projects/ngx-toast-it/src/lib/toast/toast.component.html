@@ -2,7 +2,8 @@
      (click)="destroy()"
      [ngStyle]="style">
 
-  <i class="icon {{ getIconByType() }}"></i>
+  <fa-icon [icon]="getIconByType()"></fa-icon>
+
   <div class="toast__body">
     <h5>{{ toast.heading }}</h5>
     <h6 *ngIf="toast.subheading"> - {{ toast.subheading }}</h6>

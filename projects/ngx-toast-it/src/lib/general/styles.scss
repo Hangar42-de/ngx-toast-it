@@ -1,8 +1,7 @@
-$roboto-font-path: "~ionicons/dist/fonts";@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
-//$ionicons-font-path: "~ionicons/dist/fonts";@import "~ionicons/dist/scss/ionicons.scss";
-@import "~ionicons/dist/scss/ionicons.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
-:host  {
+:host {
+  $ionicons-font-path:"~ionicons/dist/fonts";
   --toast-col-success: #47a363;
   --toast-col-success-light: #e7f4e4;
   --toast-col-info: #00bfe8;
@@ -13,3 +12,5 @@ $roboto-font-path: "~ionicons/dist/fonts";@import url('https://fonts.googleapis.
   --toast-col-error-light: #f9dedf;
   --toast-col-black: #333333;
 }
+
+@import "~ionicons/dist/scss/ionicons.scss";

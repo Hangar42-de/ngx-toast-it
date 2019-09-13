@@ -5,6 +5,7 @@ import {ToastContainerComponent} from './toast-container/toast-container.compone
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastComponent} from './toast/toast.component';
 import {ComponentInjectorService} from './general/component-injector.service';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {ComponentInjectorService} from './general/component-injector.service';
   providers: [ToastItService],
   imports: [
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ]
 })
 export class ToastItModule {

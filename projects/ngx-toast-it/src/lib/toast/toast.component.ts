@@ -1,5 +1,10 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Toast} from '../toast.model';
+import {faCheckCircle} from '@fortawesome/free-solid-svg-icons/faCheckCircle';
+import {faExclamationCircle} from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
+import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
+import {faInfoCircle} from '@fortawesome/free-solid-svg-icons/faInfoCircle';
+
 
 const FACTOR_SECONDS_TO_MS = 1000;
 
@@ -25,13 +30,13 @@ export class ToastComponent implements OnInit {
   public getIconByType() {
     switch (this.toast.type) {
       case 'toast--success':
-        return 'ion-md-checkmark-circle';
+        return faCheckCircle;
       case 'toast--info':
-        return 'ion-md-information-circle';
+        return faInfoCircle;
       case 'toast--warning':
-        return 'ion-md-warning';
+        return faExclamationTriangle;
       case 'toast--error':
-        return 'ion-md-alert';
+        return faExclamationCircle;
     }
   }
 
