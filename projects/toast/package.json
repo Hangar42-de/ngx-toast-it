@@ -1,6 +1,6 @@
 {
-  "name": "toast",
-  "version": "0.0.1",
+  "name": "toast-it",
+  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4"
