@@ -24,7 +24,7 @@ export class ToastConfig {
 export class Toast {
   type: ToastType;
   heading: string;
-  subheading?: string;
+  subheading?: string = '';
   message: string;
   timeout?: number = 5;
 

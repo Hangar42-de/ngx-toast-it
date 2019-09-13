@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ToastService} from '../../../projects/toast/src/lib/toast.service';
-import {Toast, ToastConfig, ToastPosition, ToastType} from '../../../projects/toast/src/lib/toast.model';
+import {ToastItService} from '../../../projects/ngx-toast-it/src/lib/toast-it.service';
+import {Toast, ToastConfig, ToastPosition, ToastType} from '../../../projects/ngx-toast-it/src/lib/toast.model';
 
 @Component({
   selector: 'app-test-button',
@@ -25,7 +25,7 @@ export class TestButtonComponent implements OnInit {
     timeout: 0
   };
 
-  constructor(private toastService: ToastService) {
+  constructor(private toastService: ToastItService) {
   }
 
   ngOnInit() {

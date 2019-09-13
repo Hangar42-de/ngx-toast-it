@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ToastService} from '../toast.service';
+import {ToastItService} from '../toast-it.service';
 import {BehaviorSubject, from, Observable} from 'rxjs';
 import {Toast, ToastConfig} from '../toast.model';
 import {animate, state, style, transition, trigger} from '@angular/animations';
@@ -25,7 +25,7 @@ export class ToastContainerComponent implements OnInit {
   public toasts$: Observable<Toast[]>;
   public toastCount$ = this.toastCountStream$.pipe(filter(count => count > 0));
 
-  constructor(private toastService: ToastService) {
+  constructor(private toastService: ToastItService) {
   }
 
   ngOnInit() {

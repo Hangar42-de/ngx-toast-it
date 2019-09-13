@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TestButtonComponent } from './test-button/test-button.component';
-import {ToastModule} from '../../projects/toast/src/lib/toast.module';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatSliderModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastItModule} from '../../projects/ngx-toast-it/src/lib/toast-it.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   entryComponents: [],
   imports: [
     BrowserModule,
-    ToastModule,
+    ToastItModule,
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,

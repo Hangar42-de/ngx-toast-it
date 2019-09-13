@@ -6,7 +6,7 @@ import {Toast, ToastConfig} from './toast.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ToastService {
+export class ToastItService {
 
   public activeToasts$ = new Subject<Toast>();
   public activeConfig$ = new Subject<ToastConfig>();

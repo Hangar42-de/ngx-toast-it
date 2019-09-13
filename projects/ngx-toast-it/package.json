@@ -1,5 +1,5 @@
 {
-  "name": "toast-it",
+  "name": "ngx-toast-it",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
