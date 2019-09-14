@@ -11,6 +11,8 @@
   --toast-col-error: #e21d3d;
   --toast-col-error-light: #f9dedf;
   --toast-col-black: #333333;
+  --toast-col-shadow: rgba(0,0,0,.1);
+  --toast-col-white: #ffffff;
 }
 
-@import "~ionicons/dist/scss/ionicons.scss";
+$breakpoint-mobile: "(max-width: 600px)";

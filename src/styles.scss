@@ -1,1 +1,9 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body, html{
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

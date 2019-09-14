@@ -9,6 +9,7 @@
   pointer-events: all;
   margin: 20px 40px;
   width: 350px;
+  max-width: calc(100vw - 40px);
   height: 70px;
   align-items: center;
   border-left: 8px solid transparent;
@@ -16,6 +17,8 @@
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   display: flex;
+  box-shadow: 5px 5px 10px var(--toast-col-shadow);
+  z-index: 9000;
 
   fa-icon{
     font-size: 1.8em;
@@ -25,7 +28,7 @@
 
   &__count{
     background: var(--toast-col-black);
-    color: #fff;
+    color: var(--toast-col-white);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -95,6 +98,11 @@
   &--error{
     border-color: var(--toast-col-error);
     background-color: var(--toast-col-error-light);
+  }
+  
+  @media #{$breakpoint-mobile} {
+    margin: 5px;
+    height: 60px;
   }
 }
 

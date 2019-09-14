@@ -1,7 +1,7 @@
 @import "../general/styles";
 
 .toast-container {
-  position:absolute;
+  position: absolute;
   pointer-events: none;
 
   &--top-left {
@@ -15,12 +15,34 @@
   }
 
   &--bottom-left {
-    bottom:0;
+    bottom: 0;
     left: 0;
   }
 
   &--bottom-right {
     bottom: 0;
     right: 0;
+  }
+
+  @media #{$breakpoint-mobile}  {
+    &--top-left,
+    &--top-right,
+    &--bottom-left,
+    &--bottom-right {
+      left: 0;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &--top-left,
+    &--top-right {
+      top: 0;
+    }
+    &--bottom-left,
+    &--bottom-right {
+      bottom: 0;
+    }
   }
 }
