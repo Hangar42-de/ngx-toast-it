@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Toast} from '../toast.model';
+import {Toast, ToastConfig} from '../toast.model';
 import {faCheckCircle} from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import {faExclamationCircle} from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
 import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
@@ -17,6 +17,7 @@ export class ToastComponent implements OnInit {
 
   public style = {};
   @Input() public toast: Toast;
+  @Input() public config: ToastConfig;
   @Input() public toastCount: number;
   @Output() public destroyEmitter = new EventEmitter();
 

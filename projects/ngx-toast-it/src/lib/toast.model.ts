@@ -15,6 +15,7 @@ export enum ToastPosition {
 export class ToastConfig {
   position ? = ToastPosition.topRight;
   groupingThreshold ? = 5;
+  progressBarEnabled ? = true;
 
   constructor(config = {}) {
     Object.assign(this, config);

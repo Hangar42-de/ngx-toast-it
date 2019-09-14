@@ -2,12 +2,16 @@
      (click)="destroy()"
      [ngStyle]="style">
 
-  <fa-icon [icon]="getIconByType()"></fa-icon>
-
   <div class="toast__body">
-    <h5>{{ toast.heading }}</h5>
-    <h6 *ngIf="toast.subheading"> - {{ toast.subheading }}</h6>
-    <p>{{ toast.message }}</p>
+    <fa-icon [icon]="getIconByType()"></fa-icon>
+
+    <div class="toast_content">
+      <h5>{{ toast.heading }}</h5>
+      <h6 *ngIf="toast.subheading"> - {{ toast.subheading }}</h6>
+      <p>{{ toast.message }}</p>
+    </div>
   </div>
+
   <span class="toast__count" *ngIf="toastCount">{{toastCount}}</span>
+  <lib-progress-bar *ngIf="config.progressBarEnabled" [duration]="toast.timeout"></lib-progress-bar>
 </div>

@@ -4,7 +4,14 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {TestButtonComponent} from './test-button/test-button.component';
 import {FormsModule} from '@angular/forms';
-import {MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatSliderModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatSliderModule,
+  MatSlideToggleModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastItModule} from 'ngx-toast-it';
 
@@ -23,7 +30,8 @@ import {ToastItModule} from 'ngx-toast-it';
     MatInputModule,
     MatSelectModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,6 +2,7 @@
   <lib-toast *ngFor="let toast of toasts$ | async; index as index"
              [@fadeInOut]
              [toast]="toast"
+             [config]="config"
              [toastCount]="(index + 1) === config.groupingThreshold ? (toastCount$ | async) : null"
              (destroyEmitter)="destroy(index)">
   </lib-toast>

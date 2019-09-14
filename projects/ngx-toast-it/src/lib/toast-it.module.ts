@@ -6,12 +6,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastComponent} from './toast/toast.component';
 import {ComponentInjectorService} from './general/component-injector.service';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 
 @NgModule({
   declarations: [
     ToastComponent,
-    ToastContainerComponent
+    ToastContainerComponent,
+    ProgressBarComponent
   ],
   entryComponents: [
     ToastContainerComponent

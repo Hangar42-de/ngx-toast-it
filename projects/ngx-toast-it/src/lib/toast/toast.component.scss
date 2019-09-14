@@ -1,5 +1,6 @@
 @import "../general/styles";
 
+
 :host{
   display:block;
 }
@@ -11,14 +12,27 @@
   width: 350px;
   max-width: calc(100vw - 40px);
   height: 70px;
-  align-items: center;
   border-left: 8px solid transparent;
   border-radius: 3px;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
-  display: flex;
   box-shadow: 5px 5px 10px var(--toast-col-shadow);
   z-index: 9000;
+  overflow:hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &__body{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  lib-progress-bar{
+    flex: 0 0 auto;
+  }
 
   fa-icon{
     font-size: 1.8em;

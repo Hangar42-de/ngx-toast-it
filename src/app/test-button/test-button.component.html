@@ -57,6 +57,13 @@
     <mat-hint>Defines how many toasts can be shown at the same time until they get grouped</mat-hint>
   </mat-form-field>
 
+  <mat-slide-toggle
+    color="primary"
+    [(ngModel)]="toastConfig.progressBarEnabled"
+    name="progressBarEnabled">
+    Progressbar Enabled
+  </mat-slide-toggle>
+
   <button mat-raised-button color="primary" (click)="sendConfig()">Change Config</button>
 
 

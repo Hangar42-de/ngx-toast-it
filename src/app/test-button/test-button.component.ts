@@ -13,7 +13,8 @@ export class TestButtonComponent implements OnInit {
 
   public toastConfig: ToastConfig = {
     position: ToastPosition.topRight,
-    groupingThreshold: 5
+    groupingThreshold: 5,
+    progressBarEnabled: true
   };
 
   public toast: Toast = {
