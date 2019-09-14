@@ -1,13 +1,12 @@
 # ngxToastIt
 
 ngxToastIt is a simple and lightweight Angular module providing Toasts for your application.
-Purely written in Angular 8 and designed by hand.
 
 ![toast examples](https://github.com/Hangar42-de/ngx-toast-it/blob/master/src/assets/toast-preview.png)
 
 ## Usage
 
-##### 1. Install via [NPM](http://www.napmjs.org):
+##### 1. Install via [NPM](http://www.npmjs.org):
   ```bash
   npm install @hangar42/ngx-toast-it
   ```
