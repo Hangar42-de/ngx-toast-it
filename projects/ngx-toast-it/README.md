@@ -2,6 +2,8 @@
 
 ngxToastIt is a simple and lightweight Angular module providing Toasts for your application.
 
+![toast examples](https://github.com/Hangar42-de/ngx-toast-it/blob/master/src/assets/toast-preview.png)
+
 ## Usage
 
 ##### 1. Install via [NPM](http://www.npmjs.org):
@@ -31,7 +33,8 @@ ngxToastIt is a simple and lightweight Angular module providing Toasts for your 
   ...
   public toastConfig: ToastConfig = {
       position?: ToastPosition.topRight,
-      groupingThreshold?: 5
+      groupingThreshold?: 5,
+      progressBarEnabled?: true
   };
   
   public someFunction(){
