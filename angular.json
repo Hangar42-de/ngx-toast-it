@@ -194,41 +194,7 @@
           }
         }
       }
-    },
-    "@hangar42/ngx-toast-it": {
-      "projectType": "library",
-      "root": "projects/hangar42/ngx-toast-it",
-      "sourceRoot": "projects/hangar42/ngx-toast-it/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/hangar42/ngx-toast-it/tsconfig.lib.json",
-            "project": "projects/hangar42/ngx-toast-it/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/hangar42/ngx-toast-it/src/test.ts",
-            "tsConfig": "projects/hangar42/ngx-toast-it/tsconfig.spec.json",
-            "karmaConfig": "projects/hangar42/ngx-toast-it/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/hangar42/ngx-toast-it/tsconfig.lib.json",
-              "projects/hangar42/ngx-toast-it/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    }},
+    }
+  },
   "defaultProject": "toast-module"
 }
