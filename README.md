@@ -3,17 +3,21 @@
 ngxToastIt is a simple and lightweight Angular module providing Toasts for your application.
 Purely written in Angular 8 and designed by hand.
 
+**Just have a look at the [Demo](https://hangar42-de.github.io/ngx-toast-it/)**
+
 ![toast examples](https://github.com/Hangar42-de/ngx-toast-it/blob/master/src/assets/toast-preview.png)
 
-## Usage
+## Installation
 
-##### 1. Install via [NPM](http://www.npmjs.org):
+##### Install via [NPM](http://www.npmjs.org):
   ```bash
   npm install @hangar42/ngx-toast-it
   ```
-  or manually [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip).
+  or manually [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip) it.
 
-##### 2. Include ngxToastIt as a dependency in your desired module:
+## Usage
+
+##### 1. Include ngxToastIt as a dependency in your desired module:
   ```javascript
   import {ToastItModule} from 'ngx-toast-it';
   ...
@@ -23,12 +27,12 @@ Purely written in Angular 8 and designed by hand.
    ]
   ```
 
-##### 3. Inject ToastItService in any class of the module:
+##### 2. Inject ToastItService in any class of the module:
   ```javascript
   constructor(private toastItService: ToastItService){}
   ```
 
-##### 4. (Optional) Setup Config
+##### 3. (Optional) Setup Config
  ```javascript
   import {ToastConfig, ToastPosition} from 'ngx-toast-it';
   ...
@@ -43,7 +47,7 @@ Purely written in Angular 8 and designed by hand.
   }
   ```
 
-##### 5. Create and fire Toast
+##### 4. Create and fire Toast
   ```javascript
   import {Toast, ToastType} from 'ngx-toast-it';
   ...
@@ -63,7 +67,7 @@ Purely written in Angular 8 and designed by hand.
 
 ## Development
 
-* Clone the repo or [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip)
+* Clone the repo or [download](https://github.com/Hangar42-de/ngx-toast-it/archive/master.zip) it
 * Install dependencies: ``npm install``
 * Run ``npm run build:library``
 * Run ``ng serve``

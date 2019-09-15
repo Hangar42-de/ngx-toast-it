@@ -10,7 +10,8 @@ import {
   MatInputModule,
   MatSelectModule,
   MatSliderModule,
-  MatSlideToggleModule
+  MatSlideToggleModule,
+  MatToolbarModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastItModule} from 'ngx-toast-it';
@@ -31,7 +32,8 @@ import {ToastItModule} from 'ngx-toast-it';
     MatSelectModule,
     MatSliderModule,
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

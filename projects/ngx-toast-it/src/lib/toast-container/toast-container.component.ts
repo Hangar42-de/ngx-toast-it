@@ -12,7 +12,7 @@ import {filter, take, toArray} from 'rxjs/operators';
   animations: [
     trigger('fadeInOut', [
       state('void', style({opacity: 0})),
-      transition('void <=> *', animate(250)),
+      transition('void <=> *', animate(300)),
     ]),
   ]
 })
