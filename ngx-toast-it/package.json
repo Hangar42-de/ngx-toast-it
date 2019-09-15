@@ -1,0 +1,43 @@
+{
+  "name": "ngx-toast-it",
+  "version": "1.2.1",
+  "private": false,
+  "homepage": "https://hangar42.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hangar42-de/ngx-toast-it"
+  },
+  "bugs": {
+    "url": "https://github.com/Hangar42-de/ngx-toast-it/issues",
+    "email": "bugs@hangar42.de"
+  },
+  "author": {
+    "name": "Dennis Rösner",
+    "email": "dennis@hangar42.de",
+    "url": "https://xn--rsner-jua.de/"
+  },
+  "license": "GPL-3.0",
+  "peerDependencies": {
+    "@angular/common": "^8.2.4",
+    "@angular/core": "^8.2.4",
+    "@angular/animations": "^8.2.6",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0",
+    "@fortawesome/angular-fontawesome": "^0.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2"
+  },
+  "main": "bundles/ngx-toast-it.umd.js",
+  "module": "fesm5/ngx-toast-it.js",
+  "es2015": "fesm2015/ngx-toast-it.js",
+  "esm5": "esm5/ngx-toast-it.js",
+  "esm2015": "esm2015/ngx-toast-it.js",
+  "fesm5": "fesm5/ngx-toast-it.js",
+  "fesm2015": "fesm2015/ngx-toast-it.js",
+  "typings": "ngx-toast-it.d.ts",
+  "metadata": "ngx-toast-it.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
