@@ -4,9 +4,9 @@ import {ToastItService} from './toast-it.service';
 import {ToastContainerComponent} from './toast-container/toast-container.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastComponent} from './toast/toast.component';
-import {ComponentInjectorService} from './general/component-injector.service';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import {InjectorService, NgxInjectorModule} from '@hangar42/ngx-injector';
 
 
 @NgModule({
@@ -22,12 +22,13 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxInjectorModule
   ]
 })
 export class ToastItModule {
-  constructor(componentInjectorService: ComponentInjectorService) {
-    componentInjectorService.injectComponent(ToastContainerComponent);
+  constructor(injectorService: InjectorService) {
+    injectorService.injectComponent(ToastContainerComponent);
   }
 }
 
